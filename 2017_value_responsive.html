@@ -1,0 +1,294 @@
+<!DOCTYPE html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<style type="text/css">      
+    
+  body {
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .apple_links {
+    text-decoration: none !important;
+    color: #999 !important;
+  }
+
+  .apple_links a {
+    text-decoration: none !important;
+    color: #999 !important;
+  }  
+      
+  @media only screen and (max-width: 480px)  {
+
+    table {
+      width: 100% !important;
+      text-align: center !important;
+    }
+
+    td img {
+      width: 100% !important;       
+      height: auto !important;
+      max-height: none !important;
+      text-align: center!important;
+    }  
+
+    #mobile_header {
+      width: 70% !important;
+    }    
+
+    .mobile_content {
+      max-width: 100% !important;
+    }
+
+    .mobile_content table {
+      width: 100% !important;
+      height: auto !important;
+      max-height: none !important;
+      text-align: center !important;
+      margin: 0 auto !important;
+    }  
+    
+    td.fiftypercent img {
+      width: 100% !important;
+      height: auto !important;
+      max-height: none !important;
+      text-align: center!important;
+    }    
+
+    .mobile_social {
+      width: 120px !important;
+      margin: 0 auto !important;
+      height: auto !important;
+      max-height: none !important;
+      text-align: center !important;
+    }
+
+    .mobile_social td {
+      padding: 0 !important;
+      margin: 0 !important;
+      max-width: 30px !important;
+      text-align: center !important;
+    }
+
+    .mobile_social img {
+      max-width: 30px !important;
+      height: auto !important;
+      max-height: none !important;
+    }   
+
+    .min_width {
+      min-width: 2px !important;
+      /*max-height: 52px !important;*/
+    }
+
+    .min_width img {
+      min-width: 100% !important;
+    }
+
+  } /*END MOBILE QUERIES*/
+ 
+</style>  
+</head> 
+
+<!-- DETERMINES AM/PM TYPE AND DATE FOR UTM VALUES, ETC -->
+<script runat=server language=ampscript>
+%%[
+IF FORMAT(Now(), "tt") == "AM" THEN
+SET @Email_Type = "am"
+ELSE
+SET @Email_Type = "pm"
+ENDIF
+
+SET @date_str = xtshortdate
+]%%
+
+%%[
+SET @URL_Unsubscribe = Concat('https://www.onekingslane.com/my_account/email-preferences?id=',customer_id,'&token=',MD5(emailaddr),'&utm_source=Value&utm_medium=Email&utm_campaign=%%jobid%%&utm_content=',@date_str,'.%%_subscriberkey%%.',@Email_Type,'&utm_term=Footer.EmailPreferences')
+]%%
+</script>
+<!-- END AMPSCRIPT -->
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ BEGIN EMAIL CONTENT -->
+
+<!-- BEGIN BODY -->
+<body style="margin: 0px; padding:0px; -webkit-text-size-adjust:none;" yahoo="fix"> 
+  <table width="655"  cellpadding="0" cellspacing="0" border="0" align="center" style="margin: 0 auto;
+" class="mobile_content">
+    <table width="650"  cellpadding="0" cellspacing="0" border="0" align="center" style="margin: 0 auto;" class="mobile_content">
+      <!-- BEGIN LOGO --> 
+      <tr> 
+        <td colspan="5" width="100%" style="text-align:center;"> 
+          <a href="%%=RedirectTo(Concat('https://www.onekingslane.com?utm_source=Value&utm_medium=Email&utm_campaign=', jobid , '&utm_content=', @date_str, '.',  _subscriberkey, '.', @Email_Type, '&utm_term=Header.Logo'))=%%">
+            <div class="logo">
+              <img src="https://okl.scene7.com/is/image/OKL/email_mobile_header_50x406?fmt=gif&wid=406&qlt=100,0" border="0" id="mobile_header"/>
+            </div>
+          </a>
+        </td> 
+      </tr> 
+      <!-- END LOGO -->
+
+      <!-- BEGIN TOP COLUMN -->
+      <tr> 
+        <td colspan="5" height="20" style="border-bottom: 1px solid #CCCCCC;">&nbsp; 
+        </td> 
+      </tr> 
+      <!-- END TOP COLUMN -->
+
+      <!-- BEGIN NAV -->
+      <tr>
+        <td width="217" height="25" style="text-align:center; vertical-align: middle"> 
+
+          <div class="d nav" width="100%" align="right" style="text-align:center;">
+            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/c/clearance?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.NewClearance.Desktop'))=%%" style="font-weight: bold; text-decoration: none; color: #000000; font-size: 11px; font-family: Arial; text-transform: uppercase;">
+              SHOP Sale
+            </a> 
+          </div> 
+
+          <div class="m nav" style="width:0; max-height:0; display:none; float: left; mso-hide:all; overflow:hidden; font-size: 0px;">
+            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/c/clearance?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.NewClearance.Mobile'))=%%" style=" text-decoration: none; color: #000000; text-transform: uppercase;">
+              SHOP Sale
+            </a> 
+          </div> 
+
+        </td> 
+
+        <!-- BEGIN SECTION DIVISION BAR --> 
+        <td class="min_width">
+          <img src="https://okl.scene7.com/is/image/OKL/tab_20150707?$GIF$"> 
+        </td>
+        <!-- END SECTION DIVISION BAR --> 
+
+        <!-- BEGIN SHOP BY ROOM -->
+        <td width="217" height="25" style="text-align:center; vertical-align: middle;"> 
+          <div class="d nav" width="100%" align="right" style="text-align:center;">
+            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/room?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.Room.Desktop'))=%%" style="font-weight: bold; text-decoration: none; color: #000000; font-size: 11px; font-family: Arial; text-transform: uppercase;">
+              shop by room
+            </a> 
+          </div> 
+
+          <div class="m nav" style="width:0; max-height:0; display:none; float: left; mso-hide:all; overflow:hidden; font-size: 0px; text-transform: uppercase;">
+            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/room?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.Room.Mobile'))=%%">
+              shop by room
+            </a> 
+          </div> 
+        </td> 
+        <!-- END SHOP BY ROOM -->
+
+        <!-- BEGIN SECTION DIVISION BAR --> 
+        <td class="min_width">
+          <img src="https://okl.scene7.com/is/image/OKL/tab_20150707?$GIF$"> 
+        </td>
+        <!-- END SECTION DIVISION BAR --> 
+
+        <!-- BEGIN SHOP ALL -->
+        <td width="217" height="25" style="text-align:center; vertical-align: middle"> 
+          <div class="d nav" width="100%" align="right" style="text-align:center;">
+            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.ShopAll.Desktop'))=%%" style="font-weight: bold; text-decoration: none; color: #000000; font-size: 11px; font-family: Arial; text-transform: uppercase;">
+              SHOP ALL
+            </a> 
+          </div> 
+
+          <div class="m nav" style="width:0; max-height:0; display:none; float: left; mso-hide:all; overflow:hidden; font-size: 0px; text-transform: uppercase;" >
+            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.ShopAll.Mobile'))=%%">
+              SHOP ALL
+            </a> 
+          </div> 
+        </td> 
+        <!-- END SHOP ALL -->
+      </tr> 
+      <!-- END NAV -->
+
+      <!-- BEGIN BOTTOM COLUMN -->
+      <tr> 
+        <td colspan="5" style="border-top: 1px solid #CCCCCC">
+        </td> 
+      </tr> 
+      <!-- END BOTTOM COLUMN -->
+    </table>
+    <!-- END HEADER -->
+
+    <!-- BEGIN BODY -->
+    <table width="650" cellpadding="0" cellspacing="0" border="0" align="center" style="margin: 0 auto;" class="mobile_content">
+      <tr>
+        <td class="fiftypercent"  align="center" style="text-align: center;" width="100%" style="text-align:center;">
+          <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/sale?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '&utm_term=Hero.Header.1'))=%%" style="border-style: none;" border="0">
+            <img title="Value" alt="Value" src="https://okl-scene7.insnw.net/is/image/OKL/Sale_Page?wid=650&qlt=100,1" style="border-style: none;" border="0" >
+          </a>
+        </td>
+      </tr>
+    </table>
+    <!-- END BODY -->
+
+    <!-- BEGIN FOOTER -->
+    <table width="650" cellpadding="0" cellspacing="0" border="0" align="center" style="margin: 0 auto;" class="mobile_content">
+      <tr> 
+        <td align="center"> 
+          <table cellpadding="0" cellspacing="0" border="0" align="center"> 
+            <tr> 
+              <td align="center"> 
+              </td> 
+            </tr> 
+            <tr> 
+              <td align="center"> 
+                <table cellpadding="0" cellspacing="0" border="0" align="center"> 
+                  <tr> 
+                    <td style="color: #999; font-family:Helvetica, sans-serif, Arial; font-size: 9px; padding-top: 20px; padding-bottom:15px; text-align: center">%%xtyear%% One Kings Lane&reg; All rights reserved. One Kings Lane and the elephant logo are registered trademarks of One Kings Lane Inc. 
+                      <br /> 
+                      <br />
+                      <font style="color: #999; font-family:Helvetica, sans-serif, Arial; font-size: 9px;padding-bottom: 5px;display: block;">Tastemaker Tag Sales&trade; is a trademark of One Kings Lane Inc.  Corp.  <span class="apple_links">Address: 315 Hudson Street, 8th Floor New York, NY 10013</span></font> 
+                      <br> 
+                      <br>
+
+                      <a href="https://www.onekingslane.com/privacy?utm_source=Value&utm_medium=Email&utm_campaign=%%=v(jobid)=%%&utm_content=%%=v(@date_str)=%%.%%_subscriberkey%%.%%=v(@Email_Type)=%%&utm_term=Footer.PrivacyPolicy" style="text-decoration:none; color: #999; font-size: 10px;">PRIVACY POLICY</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+
+                      <a href="https://www.onekingslane.com/contact-us?utm_source=Value&utm_medium=Email&utm_campaign=%%=v(jobid)=%%&utm_content=%%=v(@date_str)=%%.%%_subscriberkey%%.%%=v(@Email_Type)=%%&utm_term=Footer.ContactUs"  style="text-decoration:none; color: #999; font-size: 10px;">CONTACT US</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+
+                      <a href="https://www.onekingslane.com/corporate/careers/?utm_source=Value&utm_medium=Email&utm_campaign=%%=v(jobid)=%%&utm_content=%%=v(@date_str)=%%.%%_subscriberkey%%.%%=v(@Email_Type)=%%&utm_term=Footer.Hiring"  style="text-decoration:none; color: #999; font-size: 10px;">HIRING</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+
+                      <a href="%%=RedirectTo(v(@URL_Unsubscribe))=%%"  style="text-decoration:none; color: #999; font-size: 10px;">UNSUBSCRIBE</a> 
+                    </td> 
+                  </tr> 
+                  <tr> 
+                    <td align="center"> 
+                      <table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 110px; margin: 0 auto;" class="mobile_social"> 
+                        <tr> 
+                          <td style="padding-right:3px; padding-top:10px;">
+                            <a href="http://www.facebook.com/OneKingsLane" border="0">
+                              <img src="https://okl.scene7.com/is/image/OKL/Facebook?fmt=png" alt="OKL Facebook" border="0"  />
+                            </a> 
+                          </td> 
+
+                          <td style="padding-right:5px;padding-top:10px;">
+                            <a href="http://instagram.com/onekingslane" border="0">
+                              <img src="https://okl.scene7.com/is/image/OKL/Instagram?fmt=png" border="0"  />
+                            </a> 
+                          </td>
+
+                          <td style="padding-right:3px; padding-top:10px;">
+                            <a href="http://pinterest.com/onekingslane/" border="0">
+                              <img src="https://okl.scene7.com/is/image/OKL/Pinterest?fmt=png" border="0"  />
+                            </a> 
+                          </td> 
+
+                          <td style="padding-right:3px; padding-top:10px;">
+                            <a href="http://twitter.com/onekingslane" border="0">
+                              <img src="https://okl.scene7.com/is/image/OKL/Twitter?fmt=png" alt="OKL Twitter" border="0"  />
+                            </a> 
+                          </td> 
+                        </tr> 
+                      </table> 
+                    </td> 
+                  </tr> 
+                </table> 
+              </td> 
+            </tr> 
+          </table> 
+        </td> 
+      </tr> 
+    </table>
+  </table><custom name="opencounter" type="tracking"> 
+</body> 
+</html>
