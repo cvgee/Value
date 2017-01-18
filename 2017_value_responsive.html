@@ -139,21 +139,21 @@ SET @URL_Unsubscribe = Concat('https://www.onekingslane.com/my_account/email-pre
 
       <!-- BEGIN NAV -->
       <tr>
+        <!-- BEGIN SHOP -->
         <td width="217" height="25" style="text-align:center; vertical-align: middle"> 
-
           <div class="d nav" width="100%" align="right" style="text-align:center;">
-            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/c/clearance?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.NewClearance.Desktop'))=%%" style="font-weight: bold; text-decoration: none; color: #000000; font-size: 11px; font-family: Arial; text-transform: uppercase;">
-              SHOP Sale
+            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.Shop.Desktop'))=%%" style="font-weight: bold; text-decoration: none; color: #000000; font-size: 11px; font-family: Arial; text-transform: uppercase;">
+              SHOP
             </a> 
           </div> 
 
           <div class="m nav" style="width:0; max-height:0; display:none; float: left; mso-hide:all; overflow:hidden; font-size: 0px;">
-            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/c/clearance?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.NewClearance.Mobile'))=%%" style=" text-decoration: none; color: #000000; text-transform: uppercase;">
-              SHOP Sale
+            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.Shop.Mobile'))=%%" style=" text-decoration: none; color: #000000; text-transform: uppercase;">
+              SHOP
             </a> 
           </div> 
-
         </td> 
+        <!-- BEGIN SHOP -->
 
         <!-- BEGIN SECTION DIVISION BAR --> 
         <td class="min_width">
@@ -161,21 +161,21 @@ SET @URL_Unsubscribe = Concat('https://www.onekingslane.com/my_account/email-pre
         </td>
         <!-- END SECTION DIVISION BAR --> 
 
-        <!-- BEGIN SHOP BY ROOM -->
+        <!-- BEGIN OUR STYLE GUIDE -->
         <td width="217" height="25" style="text-align:center; vertical-align: middle;"> 
           <div class="d nav" width="100%" align="right" style="text-align:center;">
-            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/room?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.Room.Desktop'))=%%" style="font-weight: bold; text-decoration: none; color: #000000; font-size: 11px; font-family: Arial; text-transform: uppercase;">
-              shop by room
+            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/live-love-home/?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.StyleGuide.Desktop'))=%%" style="font-weight: bold; text-decoration: none; color: #000000; font-size: 11px; font-family: Arial; text-transform: uppercase;">
+              Our Style Guide
             </a> 
           </div> 
 
           <div class="m nav" style="width:0; max-height:0; display:none; float: left; mso-hide:all; overflow:hidden; font-size: 0px; text-transform: uppercase;">
-            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/room?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.Room.Mobile'))=%%">
-              shop by room
+            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/live-love-home/?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.StyleGuide.Mobile'))=%%">
+              Our Style Guide
             </a> 
           </div> 
         </td> 
-        <!-- END SHOP BY ROOM -->
+        <!-- END OUR STYLE GUIDE -->
 
         <!-- BEGIN SECTION DIVISION BAR --> 
         <td class="min_width">
@@ -183,21 +183,21 @@ SET @URL_Unsubscribe = Concat('https://www.onekingslane.com/my_account/email-pre
         </td>
         <!-- END SECTION DIVISION BAR --> 
 
-        <!-- BEGIN SHOP ALL -->
+        <!-- BEGIN SALE -->
         <td width="217" height="25" style="text-align:center; vertical-align: middle"> 
           <div class="d nav" width="100%" align="right" style="text-align:center;">
-            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.ShopAll.Desktop'))=%%" style="font-weight: bold; text-decoration: none; color: #000000; font-size: 11px; font-family: Arial; text-transform: uppercase;">
-              SHOP ALL
+            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/sale?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.Sale.Desktop'))=%%" style="font-weight: bold; text-decoration: none; color: #000000; font-size: 11px; font-family: Arial; text-transform: uppercase;">
+              Sale
             </a> 
           </div> 
 
           <div class="m nav" style="width:0; max-height:0; display:none; float: left; mso-hide:all; overflow:hidden; font-size: 0px; text-transform: uppercase;" >
-            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.ShopAll.Mobile'))=%%">
-              SHOP ALL
+            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/sale?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.Sale.Mobile'))=%%">
+              Sale
             </a> 
           </div> 
         </td> 
-        <!-- END SHOP ALL -->
+        <!-- END SALE -->
       </tr> 
       <!-- END NAV -->
 
@@ -215,7 +215,7 @@ SET @URL_Unsubscribe = Concat('https://www.onekingslane.com/my_account/email-pre
       <tr>
         <td class="fiftypercent"  align="center" style="text-align: center;" width="100%" style="text-align:center;">
           <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/sale?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '&utm_term=Hero.Header.1'))=%%" style="border-style: none;" border="0">
-            <img title="Value" alt="Value" src="https://okl-scene7.insnw.net/is/image/OKL/Sale_Page?wid=650&qlt=100,1" style="border-style: none;" border="0" >
+            <img title="Value" alt="Value" src="https://okl-scene7.insnw.net/is/image/OKL/Sale_Page?wid=650&qlt=100,1" style="width: 100%; max-width: 650px; border-style: none; margin: 0 auto;" border="0" >
           </a>
         </td>
       </tr>
