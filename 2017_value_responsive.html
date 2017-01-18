@@ -11,6 +11,12 @@
     padding: 0 !important;
   }
 
+  .mobile_nav {
+    display: none;
+    overflow: hidden;
+    visibility: hidden;
+  }  
+
   .apple_links {
     text-decoration: none !important;
     color: #999 !important;
@@ -50,6 +56,36 @@
       text-align: center !important;
       margin: 0 auto !important;
     }  
+
+    .desktop_nav {
+      display: none !important;
+    }
+
+    .desktop_nav a {
+      overflow: hidden !important;
+      display: none !important;
+      visibility: hidden !important;
+      font-size: 0 !important;
+      width: 0 !important;
+      max-width: 0 !important;
+      height: 0 !important;
+      max-height: 0 !important;
+      line-height: 0 !important;
+      mso-hide:all !important;
+    }
+
+    .mobile_nav {
+      visibility: visible !important;
+      display: inline !important;
+      overflow: hidden !important;
+      font-size: 12px !important;
+      width: 100% !important;
+      max-height: none !important;
+      font-family: Arial !important; 
+      text-transform: uppercase !important;
+      font-weight: bold !important; 
+      text-decoration: none !important;
+    }    
     
     td.fiftypercent img {
       width: 100% !important;
@@ -141,19 +177,31 @@ SET @URL_Unsubscribe = Concat('https://www.onekingslane.com/my_account/email-pre
       <tr>
         <!-- BEGIN SHOP -->
         <td width="217" height="25" style="text-align:center; vertical-align: middle"> 
+<<<<<<< HEAD
           <div class="d nav" width="100%" align="right" style="text-align:center;">
+=======
+          <div class="desktop_nav" width="100%" align="right" style="text-align:center;">
+>>>>>>> value-new-features
             <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.Shop.Desktop'))=%%" style="font-weight: bold; text-decoration: none; color: #000000; font-size: 11px; font-family: Arial; text-transform: uppercase;">
               SHOP
             </a> 
           </div> 
 
+<<<<<<< HEAD
           <div class="m nav" style="width:0; max-height:0; display:none; float: left; mso-hide:all; overflow:hidden; font-size: 0px;">
+=======
+          <div class="mobile_nav" style="width:0; max-height:0; display:none; float: left; mso-hide:all; overflow:hidden; font-size: 0px;">
+>>>>>>> value-new-features
             <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.Shop.Mobile'))=%%" style=" text-decoration: none; color: #000000; text-transform: uppercase;">
               SHOP
             </a> 
           </div> 
         </td> 
+<<<<<<< HEAD
         <!-- END SHOP -->
+=======
+        <!-- BEGIN SHOP -->
+>>>>>>> value-new-features
 
         <!-- BEGIN SECTION DIVISION BAR --> 
         <td class="min_width">
@@ -163,14 +211,23 @@ SET @URL_Unsubscribe = Concat('https://www.onekingslane.com/my_account/email-pre
 
         <!-- BEGIN OUR STYLE GUIDE -->
         <td width="217" height="25" style="text-align:center; vertical-align: middle;"> 
+<<<<<<< HEAD
           <div class="d nav" width="100%" align="right" style="text-align:center;">
+=======
+          <div class="desktop_nav" width="100%" align="right" style="text-align:center;">
+>>>>>>> value-new-features
             <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/live-love-home/?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.StyleGuide.Desktop'))=%%" style="font-weight: bold; text-decoration: none; color: #000000; font-size: 11px; font-family: Arial; text-transform: uppercase;">
               Our Style Guide
             </a> 
           </div> 
 
+<<<<<<< HEAD
           <div class="m nav" style="width:0; max-height:0; display:none; float: left; mso-hide:all; overflow:hidden; font-size: 0px; text-transform: uppercase;">
             <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/live-love-home/?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.StyleGuide.Mobile'))=%%">
+=======
+          <div class="mobile_nav" style="width:0; max-height:0; display:none; float: left; mso-hide:all; overflow:hidden; font-size: 0px; text-transform: uppercase;">
+            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/live-love-home/?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.StyleGuide.Mobile'))=%%" style="text-decoration: none; color: #000; text-transform: uppercase;">
+>>>>>>> value-new-features
               Our Style Guide
             </a> 
           </div> 
@@ -185,6 +242,7 @@ SET @URL_Unsubscribe = Concat('https://www.onekingslane.com/my_account/email-pre
 
         <!-- BEGIN SALE -->
         <td width="217" height="25" style="text-align:center; vertical-align: middle"> 
+<<<<<<< HEAD
           <div class="d nav" width="100%" align="right" style="text-align:center;">
             <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/sale?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.Sale.Desktop'))=%%" style="font-weight: bold; text-decoration: none; color: #000000; font-size: 11px; font-family: Arial; text-transform: uppercase;">
               SALE
@@ -194,6 +252,17 @@ SET @URL_Unsubscribe = Concat('https://www.onekingslane.com/my_account/email-pre
           <div class="m nav" style="width:0; max-height:0; display:none; float: left; mso-hide:all; overflow:hidden; font-size: 0px; text-transform: uppercase;" >
             <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/sale?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.Sale.Mobile'))=%%">
               SALE
+=======
+          <div class="desktop_nav" width="100%" align="right" style="text-align:center;">
+            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/sale?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.Sale.Desktop'))=%%" style="font-weight: bold; text-decoration: none; color: #000000; font-size: 11px; font-family: Arial; text-transform: uppercase;">
+              Sale
+            </a> 
+          </div> 
+
+          <div class="mobile_nav" style="width:0; max-height:0; display:none; float: left; mso-hide:all; overflow:hidden; font-size: 0px; text-transform: uppercase;" >
+            <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/sale?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '.', @Email_Type, '&utm_term=Menu.Sale.Mobile'))=%%" style="text-decoration: none; color: #000; text-transform: uppercase;">
+              Sale
+>>>>>>> value-new-features
             </a> 
           </div> 
         </td> 
@@ -215,7 +284,7 @@ SET @URL_Unsubscribe = Concat('https://www.onekingslane.com/my_account/email-pre
       <tr>
         <td class="fiftypercent"  align="center" style="text-align: center;" width="100%" style="text-align:center;">
           <a href="%%=RedirectTo(Concat('https://www.onekingslane.com/sale?utm_source=Value&utm_medium=Email&utm_campaign=', jobid, '&utm_content=', @date_str, '.', _subscriberkey, '&utm_term=Hero.Header.1'))=%%" style="border-style: none;" border="0">
-            <img title="Value" alt="Value" src="https://okl-scene7.insnw.net/is/image/OKL/Sale_Page?wid=650&qlt=100,1" style="border-style: none;" border="0" >
+            <img title="Value" alt="Value" src="https://okl-scene7.insnw.net/is/image/OKL/Sale_Page?wid=650&qlt=100,1" style="width: 100%; max-width: 650px; border-style: none; margin: 0 auto;" border="0" >
           </a>
         </td>
       </tr>
